@@ -1,0 +1,22 @@
+import math
+def circle_area(radius):
+    if radius <= 0:
+        raise ValueError("Radius must be a positive number.")
+    return radius*radius*math.pi
+def circle_perimeter(radius):
+    if radius <= 0:
+        raise ValueError("Radius must be a positive number.")
+    return 2*math.pi*radius
+def rectangle_area(width, height):
+    if width <= 0 or height<=0:
+        raise ValueError("Radius must be a positive number.")
+    return width*height
+def rectangle_perimeter(width, height):
+    if width <= 0 or height<=0:
+        raise ValueError("Radius must be a positive number.")
+    return 2*(width+height)
+def triangle_area(base, height):
+    if base <= 0 or height<=0:
+        raise ValueError("Radius must be a positive number.")
+    return 0.5*base*height
+
